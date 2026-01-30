@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>calling afunction example</title>
+		    <!--css -->
+		    <style>
+		    html {
+		    	     display: flex;
+		             flex-direction: column;
+		             justify-content: center;
+		             align-items: center;
+		             height: 100%;
+		             padding: 0;
+		             margin: 0;
+		    	
+		    }
+		           body {
+		           	   background: #0a96a3ff;
+		           	 display: flex;
+		             flex-direction: column;
+		             justify-content: center;
+		             align-items: center;
+		           	height: ;
+		           	padding: 0 0.5%;
+		           	margin: 0 0.5%;
+		           	overflow: auto;
+		           }
+		           .maincont {
+		           	
+		           	height: 100%;
+		           	width: 100%;
+		           	background: rgba(255,255,255,0.6);
+		             display: flex;
+		             flex-direction: row;
+		             justify-content: center;
+		             align-items: center;
+		             border-radius: 5%;
+		             border: 2px solid grey;
+		           }
+		           .subcont {
+		           	height: 98%;
+		           	width: 98%;
+		           	background:  rgba(255,255,255,0.1);
+		           	border-radius: 5%;
+		           	border: 2px solid grey;
+		           }
+		           .intercont {
+		           	height: 100%;
+		           	width: auto;
+		           	background:  rgba(255,255,255,0.1);
+		           	border-radius: 5%;
+		           	margin: 0px 10px;
+		           	border-left: 2px solid grey;
+		           	border-right: 2px solid grey;
+		           }
+		           
+		           
+		           
+		           
+		           .introduce {
+		           	border-radius: 5%;
+		           	
+		           }
+		    
+		    	input[type=text] {
+		    		color: #004400ff;
+		    		min-width: 100px;
+		    		width: 100px;
+		    		border: none !important;
+		    	}
+		    	
+		    	section {
+		    		height: 152px;
+		    		background: trasparent;
+		    		border-bottom-left-radius: 25px;
+		    		border-bottom-right-radius: 25px;
+		    		display: flex;
+		    		justify-content: center;
+		    		align-items: center;
+		    	}
+		    	
+		    	p {
+		    		position: inherit;
+		    		margin-top: 0%;
+		    			    		
+		    	}
+		    	
+		    	.rowone {
+		    		
+		    		margin-top: 0%;
+		    		background: rgba(255,255,255);
+		    		padding: 0 0 0% 0;
+		    		border-radius: 25px;
+		    	}
+		    	.inseca {
+		    		position: inherit;
+		    		margin-top: 0%;
+		    		
+		    	}
+		    	
+		    	.rowonesa input[type=text] {
+		    		border: 1px solid red;
+		    		width: 23.5% !important;
+		    		display: block;
+		    		float: left;
+		    	}
+		    	
+		    	
+		    	
+		    	.rowonesb {
+		    		padding-top: 2px;
+		    		
+		    	}
+		    	.rowonesb input[type=text] {
+		    		height: 50px;
+		    		padding: 2px;
+		    		width: 98.1%;
+		    		font-size: 25px;
+		    	}
+		    	.rowtwo, .insecd  {
+		    		display: flex;
+		    		flex-direction: row;
+		    		justify-content: center;
+		    		align-items: center;
+		    		background:transparent;		    		
+		    	}
+		    	
+		    	.insecb, .insecc, .insecd {
+		    		background: transparent;
+		    		width: 100%;
+		    		height: 50px;
+		    	}
+		    	.rowtwoa, .rowtwob, .rowtwoc, .rowtwod {
+		    		width: 25%;
+		    		height: 100%;
+		    		background: transparent;
+		    		padding: 0 0px;
+		    		margin: 0;
+		    		display: inline-block;
+		    		
+		    		text-align: center;
+		    		
+		    	}
+		    	.rowtwoa, .rowtwob, .rowtwoc {
+		    		float: left;
+		    		clear: none;
+		    	}
+		    	
+		    	.rowtwoa {
+		    		
+		    		padding-left: 1%;
+		    		width: 25%;
+		    		
+		    	}
+		    	
+		    	
+		    	.rowtwod {
+		    		float: right;
+		    		clear: right;
+		    		display: flex;
+		    		flex-direction: row;
+		    		justify-content: center;
+		    		align-items: center;
+		    	}
+		    	.rowtwob {
+		    		display: flex;
+		    		flex-direction: row;
+		    		justify-content: center;
+		    		align-items: center;
+		    	    width: 24%;
+		    	}
+		    	
+		    	.rowtwo input[type=text] {
+		    		display: inline-block;
+		    		height: 100%;
+		    		border-radius: 8%;
+		    		width: 98% !important;
+		    		margin: 0;
+		    		padding: 0 1%;
+		    		outline: none;
+		    		border: none;
+		    		font-size: 25px;
+		    	}
+		    	 
+		    	 .forrowtwo {
+		    	 	
+		    	 	transform: rotate(90deg); 
+		    	 	width: 30%;
+		    	 }
+		    	 
+		    	 
+		    	 
+		    	 
+		    	.rowthreea, .rowthreeb {
+		    		width: 50% !important;
+		    		height: 100%;
+		    		margin: 0;
+		    		padding: 0;
+		    		outline: none;
+		    		border: none;
+		    		background: transparent;
+		    		display: block;
+		    		float: left;
+		    		clear: none;
+		    		text-align-last: center;
+		    	}
+		    	
+		    	
+		    	
+		    	.rowthreea input[type=button] {
+		    		height: 90%;
+		    		margin-top: 1%;
+		    		width: 40%;
+		    	}
+		    	.rowthreeb {
+		    		display: flex;
+		    		gap: 10px;
+		    		flex-direction: row;
+		    		justify-content: end;
+		    		align-items: center;
+		    		padding-right: 8%;
+		    		width: 42% !important;
+		    		margin: 0;
+		    		outline: none;
+		    		border: none;
+		    		background: transparent;
+		    		float: right;
+		    		clear: right;
+		    	}
+		    	.rowthreeb .forrowthree {
+		    	transform: rotate(90deg); 	
+		    	width: 20%;
+		    		
+		    	}
+		    	.rowfoura, .rowfourb, .rowfourc {
+		    		display: block;
+		    		width: 33%;
+		    		height: auto;
+		    		float: left;
+		    		clear: none;
+		    	}
+		    	
+		    	
+		    	.rowfourb input[type=reset], .rowfoura input[type=button] {
+		    		
+		    		height: 35px !important;
+		    		width: 30%;
+		    		color: red;
+		    	}
+		    	 .forrowfour {
+		    	transform: rotate(90deg); 	
+		    	width: 20%;
+		    		margin-left: 55%;
+		    	}
+		    	
+		    	
+		    	table {
+		    		border: 1px solid red;
+		    		display: flex;
+		    		gap: 10px;
+		    		flex-direction: row;
+		    		justify-content: center;
+		    		align-items: center;
+		    	    width: 100%;
+		    	    height: 595px;
+		    	    border-top-left-radius: 25px;
+		    	    border-top-right-radius: 25px;
+		    	    border-bottom-left-radius: 25px;
+		    	    border-bottom-right-radius: 25px;
+		    	}
+		    	tr {
+		    		width: auto;
+		    		background: #f946ffff;
+		    		
+		    	}
+		    	
+		    	
+		    </style>
+		    
+		    
+		    <!-- javascript    -->
+		<script language="javascript">
+			<!--HIDE
+			function doMath() {
+			   var one = eval(document.aForm.elements[5].value)
+			   var two = eval(document.forms[0].elements[6].value)
+			   var prod = one+two
+			    if (document.aForm.elements[5].value ==="" || document.aForm.elements[6].value ==="") {
+			   	document.forms[0].elements[4].value = "ENTER MISSING ENTRIES"
+			   	document.forms[0].elements[4].style.textAlign = "center"
+			   } else {
+			   document.forms[0].elements[4].value = prod
+			   document.forms[0].elements[4].style.fontSize = "large"
+			   document.forms[0].elements[4].style.textAlign = "left"
+			}
+			}
+			function showOne() {
+				var a = 1000000.1
+				var b = "Error!" 
+				var f = "ENTER 0 - 1000000 ONLY"
+				if (document.forms[0].elements[5].value >= a) {
+					document.forms[0].elements[5].value = f
+					document.forms[0].elements[5].style.fontSize = "9px"
+					document.forms[0].elements[5].style.textAlign = "center"
+				} else {
+				document.forms[0].elements[0].value = document.forms[0].elements[5].value
+				document.forms[0].elements[1].value = "+"
+				
+				
+			 }
+			}
+			function showTwo() {
+				var a = 1000000.1
+				var b = "ENTER 0 - 1000000 ONLY"
+				if (document.forms[0].elements[6].value >= a) {
+					document.forms[0].elements[6].value = b
+					document.forms[0].elements[6].style.fontSize = "9px"
+					document.forms[0].elements[6].style.textAlign = "center"
+				} else {
+				document.forms[0].elements[2].value = document.forms[0].elements[6].value
+				document.forms[0].elements[3].value = "="
+				}
+			}
+			function fallBackOne() {
+			    var c = ""
+			    
+				document.forms[0].elements[5].style.fontSize = "large"
+				document.forms[0].elements[5].style.textAlign = "left"
+				document.forms[0].elements[5].value = c
+			}
+			function fallBackTwo() {
+			    var d = ""
+			    
+				document.forms[0].elements[6].style.fontSize = "large"
+				document.forms[0].elements[6].style.textAlign = "left"
+				document.forms[0].elements[6].value = d
+			}
+			function screenDisplay() {
+				if (document.forms[0].elements[5].value === "ENTER 0 - 1000000 ONLY" || document.forms[0].elements[6].value === "ENTER 0 - 1000000 ONLY") {
+					
+				
+				document.forms[0].elements[4].value = "DIGIT ENTRY BEYOND LIMITS"
+				document.forms[0].elements[4].style.fontSize = "medium"
+				document.forms[0].elements[4].style.textAlign = "center"
+				document.forms[0].elements[0].value = ""
+				document.forms[0].elements[1].value = ""
+				document.forms[0].elements[2].value = ""
+				document.forms[0].elements[3].value = ""
+					
+				} else {
+					
+					
+				}
+				
+			}
+			
+			
+			function digitDisplayOne() {
+				if (document.forms[0].elements[5].value != "") {
+					document.forms[0].elements[0].value = document.forms[0].elements[5].value
+				    document.forms[0].elements[1].value = "+"
+				    document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""
+					
+				} else if (document.forms[0].elements[5].value == "") {
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""
+				} else {
+					
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[4].value = ""
+				}
+				
+			}
+			function digitDisplayTwo() {
+				if (document.forms[0].elements[6].value != "") {
+					document.forms[0].elements[2].value = document.forms[0].elements[6].value
+				    document.forms[0].elements[0].value = "----"
+				    document.forms[0].elements[1].value = "+"
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""
+					
+				} else if (document.forms[0].elements[6].value == "") {
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""
+				} else {
+					
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[4].value = ""
+				}
+				
+			}
+			function acceptOne() {
+				
+				if (document.forms[0].elements[5].value != "" && document.forms[0].elements[5].value != "ENTER 0 - 1000000 ONLY" && document.forms[0].elements[6].value != "ENTER 0 - 1000000 ONLY") {
+					document.forms[0].elements[3].value = "="
+					} else {
+					
+					
+				}
+				
+			}
+			
+			function missingOne() {
+				if (document.forms[0].elements[5].value === "" && document.forms[0].elements[2].value != "") {
+					document.forms[0].elements[0].value = "----"
+					document.forms[0].elements[1].value = "+"
+					} else {
+										
+				}
+				
+			}
+			
+			function missingTwo() {
+				if (document.forms[0].elements[6].value === "" && document.forms[0].elements[0].value != "") {
+					document.forms[0].elements[2].value = "----"
+					document.forms[0].elements[4].value = "+"
+					} else {
+										
+				}
+				
+			}
+				
+					
+			
+			function noOne() {
+			     if (document.forms[0].elements[5].value == "ENTER 0 - 1000000 ONLY") {
+				    document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""	
+					
+				} else if(document.forms[0].elements[5].value != "") {
+					
+					document.forms[0].elements[0].value = document.forms[0].elements[5].value
+					document.forms[0].elements[1].value = "+"
+					document.forms[0].elements[4].value = ""
+				} else {
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[4].value = ""
+					
+				}
+				 
+				
+				
+			}
+			
+			function noTwo() {
+			     if (document.forms[0].elements[6].value == "ENTER 0 - 1000000 ONLY") {
+				    document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""	
+					
+				} else if(document.forms[0].elements[6].value != "") {
+					
+					document.forms[0].elements[2].value = document.forms[0].elements[6].value
+					document.forms[0].elements[1].value = "+"
+					document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = ""
+				} else {
+					document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[4].value = ""
+					
+				}
+								
+			}
+			function forClear() {
+				    document.forms[0].elements[0].value = ""
+					document.forms[0].elements[1].value = ""
+					document.forms[0].elements[2].value = ""
+				    document.forms[0].elements[3].value = ""
+					document.forms[0].elements[4].value = "FILL INPUT FIELDS BELOW AND PRESS ="	
+					document.forms[0].elements[4].style.fontSize = "medium"
+					document.forms[0].elements[4].style.textAlign = "center"
+				    document.forms[0].elements[5].value = ""
+					document.forms[0].elements[6].value = ""
+				
+			}
+			function minimumExpOne() {
+				var j = 0
+				var k = "0"
+				
+				if (document.forms[0].elements[5].value >= j) {
+					
+					document.forms[0].elements[5].value = Number(document.forms[0].elements[5].value)
+					
+				} else {
+					
+					document.forms[0].elements[5].value = k
+				}
+				
+				
+			}
+			
+			function minimumExpTwo() {
+				var l = 0
+				var m = "0"
+				
+				if (document.forms[0].elements[6].value >= l) {
+					
+					document.forms[0].elements[6].value = Number(document.forms[0].elements[6].value)
+					
+				} else {
+					
+					document.forms[0].elements[6].value = m
+				}
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			//STOP HIDING-->
+		</script>
+	</head>
+	<body>
+	     <div class="maincont">
+	        <div class="subcont">
+	           <div class="intercont">
+	           
+		<form name="aForm" class="introduce">
+		
+		   <div class="informone">
+		    <section class="rowone">
+		     <p class="inseca">
+		    	<span class="rowonesa"><input type="text" disabled/> <input type="text" disabled/> <input type="text" disabled/> <input type="text" disabled/> </span> <span class="rowonesb" style="display: ;"> <input type="text" disabled/> </span>
+		    </p>	
+		    </section>
+		    
+		   <section class="rowtwo">
+		    <p class="insecb">
+		    
+		       <span class="rowtwoa">
+			     <input type="text" style="width: 100px; background: ;" inputmode="numeric" pattern="[0-9]{7}" maxlength="7" onchange="minimumExpOne(),showOne()" onfocus="digitDisplayTwo(),noTwo(),fallBackOne()" aria-valuemin="0"/>
+			   </span>
+			   <span class="rowtwob"> + </span>
+			   <span class="rowtwoc">
+			    <input type="text"  inputmode="numeric" pattern="[0-9]{7}" maxlength="7" onchange="minimumExpTwo(),showTwo()" onfocus="digitDisplayOne(),noOne(),fallBackTwo()"/>
+			   </span>
+			   <span class="rowtwod">
+			   	  <button class="forrowtwo" disabled></button>
+			   </span>
+			 
+			 </p>
+			</section>
+			
+			<section class="rowthree">
+			 <p class="insecc">
+			 	
+			 	<span class="rowthreea"> <input type="button" value="=" onclick="screenDisplay(),acceptOne(),missingOne(),missingTwo(),doMath()"/> </span>
+			 	<span class="rowthreeb">
+			 		<button class="forrowthree" disabled></button>
+			 	</span>
+			 </p>
+			</section>
+			
+			
+		   <section class="rowfour"> 
+			<p class="insecd">
+			   
+			   <span class="rowfoura">
+			     <input type="button" value="C" onclick="forClear()"/> 
+			   </span>
+			   <span class="rowfourb">
+			     <input type="reset" value="X"/>
+			   </span>
+			   <span class="rowfourc">
+			   	 <button class="forrowfour" disabled></button>
+			   </span>
+			   
+			   
+			</p> 
+		   </section>
+			
+			
+			
+			</div>
+			
+		</form>
+		
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>
